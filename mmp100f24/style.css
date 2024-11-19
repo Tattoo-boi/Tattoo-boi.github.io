@@ -1,93 +1,42 @@
-body{ 
-
+body {
     background-color: lightblue; /* Changed background color */
-
 }
 
-
-
-body.forest{
-
+body.forest {
     background-image: url(images/forest.jpg); /* No change to the image URL */
-
 }
 
-
-
-p{ /* selector for an element type (all p tags) */
-
+p {
     font-family: cursive; /* Changed font family */
-
 }
 
-
-
-.citation{ /* selector for all elements with class="citation" */
-
+.citation {
     font-family: Verdana, Geneva, Tahoma, sans-serif; /* Changed font family */
-
     font-size: 0.7em; /* Adjusted font size */
-
     width: 85%; /* Adjusted width */
-
 }
 
-
-
-#intro{ /* selector for element with id="intro" */
-
+#intro {
     font-family: Georgia, 'Times New Roman', Times, serif; /* Changed font family */
-
 }
 
-
-
-img{
-
+img {
     width: 90%; /* Adjusted image width */
-
 }
 
-
-
-div{
-
+div {
     width: 40%; /* Adjusted div width */
-
     display: inline-block; /* No change */
-
     position: relative; /* No change */
-
     left: 8%; /* Adjusted position */
-
 }
 
-
-
-/* we can style invidual instances of class and override other styling */
-
-/* to comment things in or out, highlight and press command / */
-
-/* .right{ 
-
-    left:12%; /* Adjusted left position for .right class if uncommented */
-
-} */
-
-
-
-h1.whiteBG{
-
+/* Example for individual class styling */
+h1.whiteBG {
     background-color: lightgray; /* Changed background color */
-
     text-align: center; /* No change */
-
 }
 
-
-
-#shame{
-
+#shame {
     border-radius: 12px; /* Adjusted border radius */
-
 }
