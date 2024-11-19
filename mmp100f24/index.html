@@ -1,28 +1,28 @@
-<!DOCTYPE html> <!-- This tag tells the browser we are using HTML5 -->
+<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8"> <!-- Ensures proper encoding -->
-    <link rel="stylesheet" href="styles.css"> <!-- This tag tells the browser to use the CSS file's styling -->
-    <title>Choose Your Plate</title> <!-- Title shown in the browser tab -->
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Choose Your Plate</title>
 </head>
 
-<body> <!-- The body holds all your content -->
+<body>
     <h1>What will you eat today?</h1>
     
-    <p id="intro"> <!-- p tags are paragraphs, and an id lets you style specific elements as opposed to all tag types -->
+    <p id="intro">
         The choice is yours: will you pick a healthy meal to fuel your body or indulge in junk food for instant gratification?
     </p>
     
-    <div> <!-- div tags group content together -->
-        <a href="fastfood.html"> <!-- a tag creates a clickable link -->
-            <img id="salad" src="pics/salad.jpg" alt="a plate of fresh fruits and vegetables"> <!-- img tag displays an image -->
+    <div class="food-choice"> <!-- Used a more descriptive class name -->
+        <a href="fastfood.html">
+            <img id="salad" src="pics/salad.jpg" alt="a plate of fresh fruits and vegetables">
         </a>
-        <p class="citation"> <!-- class lets you apply similar CSS styles to multiple elements -->
+        <p class="citation">
             "Healthy Food" by John Doe is marked with CC0 1.0. To view the terms, visit <a href="https://creativecommons.org/publicdomain/zero/1.0/?ref=openverse" target="_blank">CC0 License</a>.
         </p>
     </div>
     
-    <div class="right"> <!-- Use class for specific styling of this section -->
+    <div class="food-choice"> <!-- Same class name as above for uniform styling -->
         <a href="fastfood.html">
             <img id="junkfood" src="pics/pizza.jpg" alt="pepperoni pizza">
         </a>
@@ -36,4 +36,4 @@
     </p>
 </body>
 
-</html> <!-- Almost all elements have an opening and closing tag -->
+</html>
