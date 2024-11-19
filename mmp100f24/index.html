@@ -1,42 +1,39 @@
-<!DOCTYPE html> <!-- this tag tells the browser we are using HTML5 -->
+<!DOCTYPE html> <!-- This tag tells the browser we are using HTML5 -->
 <html>
-    <head> 
-        <link rel="stylesheet" href="styles.css"> <!-- this tag tells the browser to use the CSS file's styling -->
-        <!-- the title shown in the tab of the browser -->
-        <title>
-            Choose Your Plate
-        </title>
-    </head>
+<head>
+    <meta charset="UTF-8"> <!-- Ensures proper encoding -->
+    <link rel="stylesheet" href="styles.css"> <!-- This tag tells the browser to use the CSS file's styling -->
+    <title>Choose Your Plate</title> <!-- Title shown in the browser tab -->
+</head>
 
-    <body> <!-- the body holds all your content -->
-        <h1>
-            What will you eat today?
-        </h1>
-        
-        <p id="intro"> <!-- p tags are paragraphs, and an id lets you style specific elements as opposed to all tag types -->
-            The choice is yours: will you pick a healthy meal to fuel your body or indulge in junk food for instant gratification?
+<body> <!-- The body holds all your content -->
+    <h1>What will you eat today?</h1>
+    
+    <p id="intro"> <!-- p tags are paragraphs, and an id lets you style specific elements as opposed to all tag types -->
+        The choice is yours: will you pick a healthy meal to fuel your body or indulge in junk food for instant gratification?
+    </p>
+    
+    <div> <!-- div tags group content together -->
+        <a href="healthy.html"> <!-- a tag creates a clickable link -->
+            <img id="salad" src="images/salad.jpg" alt="a plate of fresh fruits and vegetables"> <!-- img tag displays an image -->
+        </a>
+        <p class="citation"> <!-- class lets you apply similar CSS styles to multiple elements -->
+            "Healthy Food" by John Doe is marked with CC0 1.0. To view the terms, visit <a href="https://creativecommons.org/publicdomain/zero/1.0/?ref=openverse" target="_blank">CC0 License</a>.
         </p>
-        
-        <div> <!-- div tags let you group content together -->
-            <a href="healthy.html"> <!-- the a tag lets you make a clickable link -->
-                <img id="salad" src="images/salad.jpg" alt="a plate of fresh fruits and vegetables"> <!-- the img tag shows an image -->
-            </a>
-            <p class="citation"> <!-- specifying a class lets you apply similar CSS style to multiple elements -->
-                "Healthy Food" by John Doe is marked with CC0 1.0. To view the terms, visit https://creativecommons.org/publicdomain/zero/1.0/?ref=openverse.
-            </p>
-        </div>
-        
-        <div class="right">
+    </div>
+    
+    <div class="right"> <!-- Use class for specific styling of this section -->
+        <a href="junkfood.html">
+            <img id="junkfood" src="images/pizza.jpg" alt="pepperoni pizza">
+        </a>
+        <p class="citation">
+            "Junk Food" by Jane Smith is licensed under <a href="https://creativecommons.org/licenses/by/2.0/?ref=openverse" target="_blank">CC BY 2.0</a>. To view a copy of this license, visit the link.
+        </p>
+    </div>
 
-            <a href="junkfood.html">
-                <img id="junkfood" src="images/pizza.jpg" alt="pepperoni pizza">
-            </a>
-            <p class="citation"> 
-                "Junk Food" by Jane Smith is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/?ref=openverse.
-            </p>
-        </div>
-        <p>
-            Remember, the choice you make today shapes the energy and health you have tomorrow.
-        </p>
-    </body>
-</html> <!-- almost all elements have an opening and closing tag -->
+    <p>
+        Remember, the choice you make today shapes the energy and health you have tomorrow.
+    </p>
+</body>
+
+</html> <!-- Almost all elements have an opening and closing tag -->
