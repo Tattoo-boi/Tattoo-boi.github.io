@@ -1,42 +1,48 @@
 body {
-    background-color: lightblue; /* Changed background color */
+    background-color: lightblue;
+    font-family: Arial, sans-serif;
 }
 
-body.forest {
-    background-image: url(images/forest.jpg); /* No change to the image URL */
+body.healthy {
+    background-image: url('images/healthy_background.jpg'); /* Example for a healthy food-themed background */
+    background-size: cover;
 }
 
 p {
-    font-family: cursive; /* Changed font family */
+    font-family: cursive;
 }
 
 .citation {
-    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Changed font family */
-    font-size: 0.7em; /* Adjusted font size */
-    width: 85%; /* Adjusted width */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.7em;
+    width: 85%;
 }
 
 #intro {
-    font-family: Georgia, 'Times New Roman', Times, serif; /* Changed font family */
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 img {
-    width: 90%; /* Adjusted image width */
+    max-width: 100%; /* Ensure images maintain aspect ratio */
 }
 
-div {
-    width: 40%; /* Adjusted div width */
-    display: inline-block; /* No change */
-    position: relative; /* No change */
-    left: 8%; /* Adjusted position */
+.food-choice {
+    width: 45%; /* Adjusted div width */
+    display: inline-block;
+    position: relative;
+    margin: 10px;
 }
 
-/* Example for individual class styling */
 h1.whiteBG {
-    background-color: lightgray; /* Changed background color */
-    text-align: center; /* No change */
+    background-color: lightgray;
+    text-align: center;
+    padding: 20px; /* Added padding for better readability */
+}
+
+.right {
+    /* Define this if used, otherwise remove */
 }
 
 #shame {
-    border-radius: 12px; /* Adjusted border radius */
+    border-radius: 12px;
 }
