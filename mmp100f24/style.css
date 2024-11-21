@@ -1,25 +1,18 @@
 /* Basic body styling */
 body {
+    background-color: lightblue;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: lightblue;
 }
 
-/* Use a "healthy" class for background image on healthy page */
+/* For a more advanced background image on the healthy page */
 body.healthy {
-    background-image: url('pics/background.jpg');  /* Background image added here */
-    background-size: cover;  /* Make the image cover the entire page */
-    background-position: center;  /* Center the background */
-    background-attachment: fixed;  /* Fixed position background for visual effect */
-}
-
-/* Use a "fastfood" class for the fastfood (junk food) page background */
-body.fastfood {
-    background-image: url('pics/background.jpg');  /* Background image added here */
-    background-size: cover;  /* Make the image cover the entire page */
-    background-position: center;  /* Center the background */
-    background-attachment: fixed;  /* Fixed position background for visual effect */
+    background-image: url('images/healthy_background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 /* Styling for the header */
@@ -27,13 +20,7 @@ h1.whiteBG {
     background-color: lightgray;
     text-align: center;
     padding: 20px;
-    font-size: 2rem; /* Improved size for the heading */
-    color: #333;
-}
-
-h1 {
-    text-align: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #333;
 }
 
@@ -48,7 +35,7 @@ h1 {
 
 /* Container for the images and text */
 .food-choice {
-    width: 45%; /* Adjust the container width */
+    width: 45%;
     display: inline-block;
     text-align: center;
     margin: 20px;
@@ -57,15 +44,15 @@ h1 {
 
 /* Image styling: ensuring they don't overflow */
 img {
-    max-width: 100%;  /* Make sure images scale with the container width */
-    height: auto;     /* Maintain aspect ratio */
+    max-width: 100%;
+    height: auto;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for better aesthetics */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Specific image size adjustments */
 #salad, #pizza {
-    max-width: 300px;  /* Limit the maximum width for both images */
+    max-width: 300px;
     width: 100%;
     height: auto;
 }
@@ -82,7 +69,7 @@ img {
 /* Link styling */
 a {
     text-decoration: none;
-    color: #007bff; /* Link color */
+    color: #007bff;
     font-weight: bold;
 }
 
@@ -92,11 +79,11 @@ a:hover {
 
 /* Styling for larger images on detail pages */
 .large-img {
-    width: 80%;  /* Adjust as necessary */
+    width: 80%;
     margin: 20px auto;
     display: block;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for a polished look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* More spacing for content */
