@@ -1,52 +1,94 @@
+/* Basic body styling */
 body {
     background-color: lightblue;
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
+/* For a more advanced background image on the healthy page */
 body.healthy {
-    background-image: url('images/healthy_background.jpg'); /* Example for a healthy food-themed background */
+    background-image: url('images/healthy_background.jpg'); /* Replace with your healthy background image */
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Fixed position background for a better visual effect */
 }
 
-p {
-    font-family: cursive;
-}
-
-.citation {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 0.7em;
-    width: 85%;
-}
-
-#intro {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-img {
-    max-width: 100%; /* Ensure images maintain aspect ratio */
-}
-
-.food-choice {
-    width: 45%; /* Adjusted div width */
-    display: inline-block;
-    position: relative;
-    margin: 10px;
-}
-
+/* Styling for the header */
 h1.whiteBG {
     background-color: lightgray;
     text-align: center;
-    padding: 20px; /* Added padding for better readability */
+    padding: 20px;
+    font-size: 2rem; /* Improved size for the heading */
+    color: #333;
 }
 
-.right {
-    /* Define this if used, otherwise remove */
+/* More advanced paragraph styles */
+.intro-text {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
 }
 
-#shame {
-    border-radius: 12px;
+/* Container for the images and text */
+.food-choice {
+    width: 45%; /* Adjust the container width */
+    display: inline-block;
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
 }
 
-#salad {
-    width:50px;
+/* Image styling: ensuring they don't overflow */
+img {
+    max-width: 100%;  /* Make sure images scale with the container width */
+    height: auto;     /* Maintain aspect ratio */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for better aesthetics */
+}
+
+/* Specific image size adjustments */
+#salad, #pizza {
+    max-width: 300px;  /* Limit the maximum width for both images */
+    width: 100%;
+    height: auto;
+}
+
+/* Citation text styling */
+.citation {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.9em;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Link styling */
+a {
+    text-decoration: none;
+    color: #007bff; /* Link color */
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Styling for larger images on detail pages */
+.large-img {
+    width: 80%;  /* Adjust as necessary */
+    margin: 20px auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for a polished look */
+}
+
+/* More spacing for content */
+.content {
+    text-align: center;
+    max-width: 800px;
+    margin: 20px auto;
 }
