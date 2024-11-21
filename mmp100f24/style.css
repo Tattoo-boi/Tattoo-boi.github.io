@@ -8,7 +8,7 @@ body {
 
 /* For a more advanced background image on the healthy page */
 body.healthy {
-    background-image: url('images/healthy_background.jpg'); /* Replace with your healthy background image */
+    background-image: url('images/healthy_background.jpg'); /* Make sure to replace with your actual background image */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
