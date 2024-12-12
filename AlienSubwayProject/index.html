@@ -1,33 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Interactive Media Project</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alien Encounters in NYC Subway</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
+    <script src="p5-sketch.js" defer></script>
 </head>
 <body>
-  <h1>Where Are We Off To Today?</h1>
-  <p>A Photoshop Creation by [Your Name]</p>
+    <header>
+        <h1>Alien Encounters in the NYC Subway</h1>
+        <p>Discover the surreal world of unexpected encounters under New York City.</p>
+    </header>
+    
+    <main>
+        <section id="gallery">
+            <!-- Display all images -->
+            <div class="image-container">
+                <img src="pics/Alien.jpg" alt="Alien 1">
+            </div>
+            <div class="image-container">
+                <img src="pics/Alien2.jpg" alt="Alien 2">
+            </div>
+            <div class="image-container">
+                <img src="pics/Alien3.jpg" alt="Alien 3">
+            </div>
+            <div class="image-container">
+                <img src="pics/Alien4.jpg" alt="Alien 4">
+            </div>
+            <div class="image-container">
+                <img src="pics/Alien5.jpg" alt="Alien 5">
+            </div>
+            <div class="image-container">
+                <img src="pics/photoshop-creation.jpg" alt="Photoshop Creation">
+            </div>
+        </section>
 
-  <div id="gallery">
-    <!-- Main image with hover sound -->
-    <div class="image-container">
-      <img src="pics/photoshop-creation.jpg" alt="Aliens in Subway" id="main-image">
-      <audio id="hover-sound" src="pics/hover-effect.mp3"></audio>
-    </div>
+        <section id="audio-controls">
+            <button id="play-sound">Play Ambient Sound</button>
+        </section>
 
-    <!-- Placeholder box -->
-    <div class="placeholder">
-      <p>Coming Soon</p>
-    </div>
-  </div>
-
-  <!-- Background ambient sound -->
-  <audio id="ambient-sound" src="pics/ambient-sound.mp3" autoplay loop></audio>
-
-  <script src="script.js"></script>
-  <script src="p5.js"></script>
-  <script src="sketch.js"></script>
+        <canvas id="alienCanvas"></canvas>
+    </main>
+    
+    <footer>
+        <p>Created by [Your Name] | Inspired by the NYC subway experience.</p>
+    </footer>
 </body>
 </html>
