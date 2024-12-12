@@ -1,11 +1,12 @@
+// p5.js animation for aliens
 function setup() {
-  let canvas = createCanvas(300, 300);
-  canvas.parent('.placeholder'); // Attach the canvas to the placeholder div
-  noStroke();
+    let canvas = createCanvas(windowWidth, 300);
+    canvas.parent('alienCanvas');
+    background(0);
 }
 
 function draw() {
-  background(0);
-  fill(random(255), random(255), random(255));
-  ellipse(random(width), random(height), 20, 20);
+    noStroke();
+    fill(random(100, 255), random(100, 255), random(100, 255));
+    ellipse(random(width), random(height), random(10, 50));
 }
