@@ -3,29 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alien Subway Station</title>
+  <title>Interactive Media Project</title>
   <link rel="stylesheet" href="styles.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
-  <script src="sketch.js" defer></script>
-  <script src="script.js" defer></script>
 </head>
 <body>
-  <header>
-    <h1>Alien Subway Station</h1>
-    <p>Explore the surreal coexistence of humans and aliens.</p>
-  </header>
+  <h1>Where Are We Off To Today?</h1>
+  <p>A Photoshop Creation by [Your Name]</p>
 
-  <main>
-    <div id="gallery">
-      <div class="image-container">
-        <img src="pics/photoshop-creation.jpg" alt="Aliens in Subway" id="main-image">
-        <audio id="hover-sound" src="pics/hover-effect.mp3"></audio>
-      </div>
+  <div id="gallery">
+    <!-- Main image with hover sound -->
+    <div class="image-container">
+      <img src="pics/photoshop-creation.jpg" alt="Aliens in Subway" id="main-image">
+      <audio id="hover-sound" src="pics/hover-effect.mp3"></audio>
     </div>
-  </main>
 
-  <footer>
-    <p>Created by Your Name | © 2024</p>
-  </footer>
+    <!-- Placeholder box -->
+    <div class="placeholder">
+      <p>Coming Soon</p>
+    </div>
+  </div>
+
+  <!-- Background ambient sound -->
+  <audio id="ambient-sound" src="pics/ambient-sound.mp3" autoplay loop></audio>
+
+  <script src="script.js"></script>
+  <script src="p5.js"></script>
+  <script src="sketch.js"></script>
 </body>
 </html>
