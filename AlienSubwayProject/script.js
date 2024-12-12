@@ -1,15 +1,8 @@
-// JavaScript for interactive features
-document.addEventListener('DOMContentLoaded', () => {
-    const playSoundBtn = document.getElementById('play-sound');
-    let audio = new Audio('pics/ambient-sound.mp3');
+document.addEventListener("DOMContentLoaded", () => {
+    const playButton = document.getElementById("play-sound");
+    const audio = new Audio("pics/hover-effect.mp3");
 
-    playSoundBtn.addEventListener('click', () => {
-        if (audio.paused) {
-            audio.play();
-            playSoundBtn.textContent = 'Pause Ambient Sound';
-        } else {
-            audio.pause();
-            playSoundBtn.textContent = 'Play Ambient Sound';
-        }
+    playButton.addEventListener("click", () => {
+        audio.play();
     });
 });
