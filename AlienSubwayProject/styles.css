@@ -57,3 +57,11 @@ img {
 img.visible {
   opacity: 1;
 }
+/* Add this to styles.css for main photo hover animation */
+#main-photo {
+  transition: transform 0.3s ease-in-out;
+}
+
+#main-photo:hover {
+  transform: scale(1.1);
+}
